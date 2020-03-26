@@ -12,10 +12,10 @@ Steps to reproduce the bug:
 * Install the app: `adb install app/build/outputs/apk/debug/app-debug.apk`
 * Launch the app
 * Tap anywhere except on the robot image
-  - :white_check_mark: TalkBack reads "surface view label": OK
+  - :white_check_mark: TalkBack reads "background": OK
 * Tap on the robot image:
   - Expected behavior: TalkBack reads "robot"
-  - :x: Actual behavior: TalkBack briefly selects the robot image, then unselects the robot image, selects the surface view image, and reads "surface view label"
+  - :x: Actual behavior: TalkBack briefly selects the robot image, then unselects the robot image, selects the background `FrameLayout`, and reads "background"
 * Swipe left or right to select accessible elements.
   - :white_check_mark: Talkback can select the robot image and read "robot": OK
 
